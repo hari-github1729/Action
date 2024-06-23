@@ -1,0 +1,7 @@
+name: simple
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    - name: simple test write
+      run: echo hello world
