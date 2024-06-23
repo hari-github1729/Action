@@ -1,17 +1,9 @@
-name: Example Workflow
-
-on:
-  push:
-    branches:
-      - main
-
+name: simple
+on: [push]
 jobs:
-  example-job:
+  simple-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Print Hello World
-        run: echo "Hello, World!"
+      - name: echo script
+        run: echo "hello world"
