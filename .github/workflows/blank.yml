@@ -5,5 +5,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: echo script
-        run: echo "hello world"
+      - name: check out the repo
+        uses: actions/checkout@v4
+        
+      - name: setting up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: install pytest
+        run: pip install pytest
+
+      - name: run the tests
+        run: pytest add.py
+        
+          
+        
+          
