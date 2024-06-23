@@ -1,8 +1,8 @@
-name: simple
-on: push
+name: first
+on: [push]
 jobs:
-  build:
+  simplejob:
     runs-on: ubuntu-latest
     steps:
-    - name: simple test write
-      run: echo hello world
+      - name: echo test
+        run: echo hello world
