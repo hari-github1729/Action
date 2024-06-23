@@ -3,5 +3,6 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
     - name: simple test write
       run: echo hello world
