@@ -6,7 +6,10 @@ jobs:
     name: greeting the user
     steps:
       - run: echo "Hello World"
-  
+      - run: echo "hacker=Harish" >> GITHUB_OUTOUT
+        id: alpas1
+      - run: echo "the hacker is $hacker"
+        id: alpas2
   job2:
     needs: job1
     runs-on: ubuntu-slim
