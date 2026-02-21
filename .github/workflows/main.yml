@@ -6,9 +6,9 @@ jobs:
     name: greeting the user
     steps:
       - run: echo "Hello World"
-      - run: echo "hacker=Harish" >> $GITHUB_ENV
+      - run: echo "hacker=Harish" >> $GITHUB_OUTPUT
         id: alpas1
-      - run: echo "the hacker is $hacker"
+      - run: echo "the hacker is ${{steps.alpas1.outputs.hacker}}"
         id: alpas2
   job2:
     needs: job1
