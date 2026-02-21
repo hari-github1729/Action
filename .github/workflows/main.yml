@@ -8,6 +8,7 @@ jobs:
       - run: echo "Hello World"
   
   job2:
+    needs: job1
     runs-on: ubuntu-slim
     name: greet user using python
     steps:
