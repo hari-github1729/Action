@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-slim
     name: greet user using python
     steps:
-      - run: echo "hacker of the job1 is ${{needs.job1.outputs.job1result}}
+      - run: echo "hacker of the job1 is ${{needs.job1.outputs.job1result}}"
