@@ -2,6 +2,8 @@ name: hello_world
 on: workflow_dispatch
 jobs:
   job1:
+    outputs:
+      job1result: ${{steps.alpas1.outputs.hacker}}
     runs-on: ubuntu-slim
     name: greeting the user
     steps:
@@ -15,5 +17,4 @@ jobs:
     runs-on: ubuntu-slim
     name: greet user using python
     steps:
-      - run: print("hello world")
-        shell: python
+      - run: echo "hacker of the job1 is ${{needs.job1.outputs.job1result}}
