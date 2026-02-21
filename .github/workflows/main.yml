@@ -1,0 +1,9 @@
+name: hello_world
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-20.04
+    name: greeting the user
+    steps:
+      - run: echo "Hello World"
+    
