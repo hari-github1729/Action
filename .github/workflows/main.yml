@@ -2,8 +2,14 @@ name: hello_world
 on: workflow_dispatch
 jobs:
   job1:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-slim
     name: greeting the user
     steps:
       - run: echo "Hello World"
-    
+  
+  job2:
+    runs-on: ubuntu-slim
+    name: greet user using python
+    steps:
+      - run: print("hello world")
+        shell: python
