@@ -6,7 +6,7 @@ jobs:
     name: greeting the user
     steps:
       - run: echo "Hello World"
-      - run: echo "hacker=Harish" >> GITHUB_OUTOUT
+      - run: echo "hacker=Harish" >> GITHUB_OUTPUT
         id: alpas1
       - run: echo "the hacker is $hacker"
         id: alpas2
